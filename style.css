@@ -107,6 +107,11 @@ ul{
   cursor: pointer;
 }
 
+.submit-btn:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
 ul > button:hover {
   background-color: var(--orange);
   color: var(--white);

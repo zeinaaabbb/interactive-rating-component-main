@@ -1,14 +1,3 @@
-// console.log("hello");
-
-// const ratingBtns = document.querySelectorAll(".btn");
-
-// ratingBtns.forEach((btn) => {
-//   // console.log(btn);
-//   btn.addEventListener("click", (event) => {
-//     console.log("Clicked the button!");
-
-//   })
-// });
 
 document.querySelectorAll(".btn").forEach((btn) => {
   // console.log(btn);
