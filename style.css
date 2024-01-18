@@ -63,13 +63,14 @@ body {
 
 h3 {
   color: var(--white);
+  margin-bottom: 10px;
 
 }
 
 p {
   color: var(--medium-grey) ;
   font-size: var(--fs-400) ;
-
+  margin-bottom: 10px;
 }
 
 .rating {
@@ -82,12 +83,15 @@ ul{
 }
 
 ul > button {
-  padding: 5px;
+  margin: 0 10px;
+  padding: 12px;
   border-radius: 50%;
   border: none;
-  gap: 4em;
   color: var(--light-grey);
   background-color: var(--very-dark-blue);
+  display: inline-block;
+  align-content: space-evenly;
+
 }
 
 .submit-btn {
@@ -97,8 +101,25 @@ ul > button {
   font-size: var(--fs-400);
   display: block;
 	width: 100%;
-  margin-top: 5px;
+  margin-top: 10px;
   padding: 7px;
   border-radius: 9px;
+}
 
+img {
+  width: 8px;
+  height: 8px;
+  /* keeping centeed to the round div */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon-star{
+  background-color: var(--very-dark-blue);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
 }
