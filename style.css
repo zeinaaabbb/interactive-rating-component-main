@@ -12,3 +12,93 @@
 - Very Dark Blue: hsl(216, 12%, 8%) */
 
 /* font-family: 'Overpass', sans-serif; */
+
+:root{
+  --ff-sans: 'Overpass', sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-400: 0.8rem;
+  --fs-500: 1.2rem;
+  --fs-800: 3.5rem;
+
+  --white: hsl(0, 0%, 100%);
+  --orange: hsl(25, 97%, 53%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--ff-sans);
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  line-height: 1.5;
+
+}
+
+.container {
+  background-color: var(--dark-blue);
+  max-width: 350px;
+  border-radius: 20px;
+  padding: 20px 20px;
+  margin: 10px;
+
+  /* centering */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h3 {
+  color: var(--white);
+
+}
+
+p {
+  color: var(--medium-grey) ;
+  font-size: var(--fs-400) ;
+
+}
+
+.rating {
+  color: var(--medium-grey);
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+ul > button {
+  padding: 5px;
+  border-radius: 50%;
+  border: none;
+  gap: 4em;
+  color: var(--light-grey);
+  background-color: var(--very-dark-blue);
+}
+
+.submit-btn {
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  font-size: var(--fs-400);
+  display: block;
+	width: 100%;
+  margin-top: 5px;
+  padding: 7px;
+  border-radius: 9px;
+
+}
