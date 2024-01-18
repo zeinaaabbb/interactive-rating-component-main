@@ -1,0 +1,125 @@
+/*
+### Primary
+
+- Orange: hsl(25, 97%, 53%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%) */
+
+/* font-family: 'Overpass', sans-serif; */
+
+:root{
+  --ff-sans: 'Overpass', sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-400: 0.8rem;
+  --fs-500: 1.2rem;
+  --fs-800: 3.5rem;
+
+  --white: hsl(0, 0%, 100%);
+  --orange: hsl(25, 97%, 53%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--ff-sans);
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  line-height: 1.5;
+
+}
+
+.container {
+  background-color: var(--dark-blue);
+  max-width: 350px;
+  border-radius: 20px;
+  padding: 20px 20px;
+  margin: 10px;
+
+  /* centering */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h3 {
+  color: var(--white);
+  margin-bottom: 10px;
+
+}
+
+p {
+  color: var(--medium-grey) ;
+  font-size: var(--fs-400) ;
+  margin-bottom: 10px;
+}
+
+.rating {
+  color: var(--medium-grey);
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+ul > button {
+  margin: 0 10px;
+  padding: 12px;
+  border-radius: 50%;
+  border: none;
+  color: var(--light-grey);
+  background-color: var(--very-dark-blue);
+  display: inline-block;
+  align-content: space-evenly;
+
+}
+
+.submit-btn {
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  font-size: var(--fs-400);
+  display: block;
+	width: 100%;
+  margin-top: 10px;
+  padding: 7px;
+  border-radius: 9px;
+}
+
+img {
+  width: 8px;
+  height: 8px;
+  /* keeping centeed to the round div */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon-star{
+  background-color: var(--very-dark-blue);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+}
