@@ -117,10 +117,10 @@ ul > button:hover {
   color: var(--white);
 }
 
-/* .btn {
-  display: none
-  background-color: ;
-} */
+.btn:focus {
+  background-color: grey;
+  color: var(--white);
+}
 
 img {
   width: 8px;
