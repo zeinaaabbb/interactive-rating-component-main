@@ -82,7 +82,7 @@ ul{
   list-style-type: none;
 }
 
-ul > button {
+.btn {
   margin: 0 10px;
   padding: 12px;
   border-radius: 50%;
@@ -91,7 +91,7 @@ ul > button {
   background-color: var(--very-dark-blue);
   display: inline-block;
   align-content: space-evenly;
-
+  cursor: pointer;
 }
 
 .submit-btn {
@@ -104,7 +104,18 @@ ul > button {
   margin-top: 10px;
   padding: 7px;
   border-radius: 9px;
+  cursor: pointer;
 }
+
+ul > button:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+/* .btn {
+  display: none
+  background-color: ;
+} */
 
 img {
   width: 8px;
