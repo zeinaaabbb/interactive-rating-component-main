@@ -11,29 +11,9 @@ submitButton.addEventListener("click", (event)=> {
 
 document.querySelectorAll(".btn").forEach((btn) => {
   btn.addEventListener("click", (event) => {
-    console.log(event.target.innerText);
-    .btn:focus =
-    if
+    // console.log(btn.innerText);
+    rate.innerHTML = btn.innerText ;
+    // console.log(event.target.innerText);
+
   })
 });
-
-
-
-// document.querySelectorAll(".btn").forEach((btn) => {
-//   // console.log(btn);
-//   btn.addEventListener("click", (event) => {
-//     // console.log("Clicked the button!");
-
-//     // use event.target.innerText to indicate rating
-//     if (rate) {
-//       rate = event.target.innerText {
-//   rate.innerHTML
-//     }
-//     });
-//   });
-// // });
-
-
-// when button clicked this will hide current card and show card 2
-// when the clicked button:focus this would take the target.innertext
-// display the innertext of the entire text to display on button
