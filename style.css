@@ -19,6 +19,7 @@
   --fw-regular: 400;
   --fw-bold: 700;
 
+  --fs-300: 0.5rem;
   --fs-400: 0.8rem;
   --fs-500: 1.2rem;
   --fs-800: 3.5rem;
@@ -48,6 +49,7 @@ body {
 }
 
 .container {
+  display: none;
   background-color: var(--dark-blue);
   max-width: 350px;
   border-radius: 20px;
@@ -138,4 +140,43 @@ img {
   height: 20px;
   border-radius: 50%;
   position: relative;
+}
+
+/*thank you card*/
+
+.container-2 {
+  text-align: center;
+  background-color: rgb(30,36,46);
+  max-width: 350px;
+  border-radius: 20px;
+  padding: 20px 20px;
+  margin: 10px;
+  /* centering */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.selected-rating {
+  color: var(--orange);
+  background-color: rgb(35,46,54) ;
+  font-size: var(--fs-300);
+  padding: 3px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+h6 {
+  padding: 8px;
+  color: var(--white);
+  font-size: var(--fs-400);
+}
+
+.img-2 {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
